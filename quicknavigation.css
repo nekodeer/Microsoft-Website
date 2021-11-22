@@ -1,0 +1,60 @@
+/* quick navigation under slideshow */
+
+.wrap {
+  max-width: 80%;
+  overflow-x: auto;
+  margin: 0 auto;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.quickclick {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 20px;
+  border: 2px solid transparent;
+}
+.quickclick a {
+  display: inline-block;
+  width: 180px;
+  height: 112px;
+  padding: 12px 6px;
+}
+.quickclick p {
+  max-width: 125px;
+  margin: 0 auto;
+  text-align: center;
+  white-space: normal;
+  font-weight: 600;
+}
+.quickclick:hover {
+  text-decoration: underline;
+}
+.quickclick:active {
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    overflow: visible;
+  }
+  .quickclick {
+    text-align: left;
+  }
+  .quickclick a {
+    width: auto;
+    height: auto;
+  }
+  .smallicon {
+    height: 20px;
+    float: left;
+    margin-right: 20px;
+  }
+  .quickclick a p {
+    display: inline;
+  }
+}

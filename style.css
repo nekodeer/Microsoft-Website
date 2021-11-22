@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: Segoe UI, SegoeUI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  min-width: 320px;
+  background-color: white;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #262626;
+}
+a:hover {
+  color: black;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.headcontainer,
+.slidecontainer,
+.midcontainer,
+.quicknavcontainer,
+.socialmedia {
+  max-width: calc(1600px + 10%);
+  margin: 0 auto;
+  padding: 0 5%;
+}
+.navbar-brand {
+  margin-right: 0;
+}

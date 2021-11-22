@@ -1,0 +1,48 @@
+/* midcontainer */
+.midcontainer {
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.promobox {
+  margin: 20px 0;
+  width: auto;
+  text-align: left;
+}
+.promoboxwrap {
+  height: 350px;
+}
+.promobox a p {
+  color: #000;
+}
+.promobox a img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+/* change the opacity of the picture when the cursor move to the pic */
+.promobox a img:hover {
+  opacity: 0.5;
+}
+.promobox a:nth-child(1) h6 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* add the symbol ">" and control its animation when cusor was focus on the button */
+.promobox a:nth-child(2) p,
+.promobox a:nth-child(3) p {
+  font-weight: 600;
+  display: inline-block;
+  height: 20px;
+}
+.promobox a:nth-child(2)::after,
+.promobox a:nth-child(3)::after {
+  content: ">";
+  font-weight: 800;
+}
+.promobox a:nth-child(2) p:hover,
+.promobox a:nth-child(3) p:hover {
+  border-bottom: 2px solid black;
+  margin-right: 10px;
+}

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MS Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="headstyle.css">
+  <link rel="stylesheet" href="slideshowandxbox.css">
+  <link rel="stylesheet" href="socialmediaandfooter.css">
+  <link rel="stylesheet" href="promobox.css">
+  <link rel="stylesheet" href="quicknavigation.css">
+</head>
+
+<body>
+
+  <!-- nav on top -->
+  <div class="headcontainer">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#"><img src="./MSICON/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Microsoft 365</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Office</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Windows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Surface</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Xbox</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sale</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <!--  -->
+        <div class="dropdownitem dropdownbuttonright">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              All Microsoft
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </div>
+
+        <!-- search, cart and sign-in button -->
+        <div class="right-menu search">
+          <a href="#">
+            <span>Search</span>
+            <i class="bi bi-search"></i>
+          </a>
+        </div>
+        <div class="right-menu">
+          <a href="#">
+            <span>Cart</span>
+            <i class="bi bi-cart"></i>
+          </a>
+        </div>
+        <div class="right-menu">
+          <a href="#">
+            <span>Sign-in</span>
+            <i class="bi bi-person-plus"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+<!-- ppt slide under the navbar -->
+  <div class="slidecontainer">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators slidesbuttononbottom">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Pictures/slide1 exlg.webp" class="d-block w-100" alt="...">
+          <div class="descriptionandbutton">
+            <div class="surfaceshop">
+              <a href="#">
+                <p>New</p>
+                <h3>Surface Pro 8</h3>
+                <p>Do more with a larger 13-inch touchscreen, faster connections and extra speed. Now available with
+                  Windows 11.</p>
+              </a>
+              <button type="button" class="slideshopbutton">
+                <a href="">
+                  <span>Shop Now</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./Pictures/exlgslide 2.jpg" class="d-block w-100" alt="...">
+          <div class="descriptionandbutton-two">
+            <div class="surfaceshop">
+              <a href="#">
+                <h3>Surface Laptop Go</h3>
+                <p>Unwrap inspiration with the style, performance and portability of our lightest Surface laptop yet</p>
+              </a>
+              <button type="button" class="slideshopbutton">
+                <a href="">
+                  <span>Shop Now</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev prevslidebutton" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next nextslidebutton" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span> 
+        <!-- 这个Next Button会造成页面缩小后有1px的溢出，在CSS里添加了overflow hidden就不造成溢出了 -->
+      </button>
+    </div>
+
+  </div>
+
+
+  <!-- Navbar in mid for quick destination selection -->
+  <div class="quicknavcontainer">
+    <div class="wrap">
+      <div class="quickclick">
+        <a href=""><img class="smallicon" src="./MSICON/RE4sQDc.png" alt="">
+          <p>Choose your Microsoft 365</p>
+        </a>
+      </div>
+      <div class="quickclick">
+        <a href=""><img class="smallicon" src="./MSICON/surface.webp" alt="">
+          <p>Shop Surface </p>
+        </a>
+      </div>
+      <div class="quickclick">
+        <a href=""><img class="smallicon" src="./MSICON/xbox.webp" alt="">
+          <p>Buy Xbox games and consoles</p>
+        </a>
+      </div>
+      <div class="quickclick">
+        <a href=""><img class="smallicon" src="./MSICON/RE4sQDc.png" alt="">
+          <p>Get windows 11</p>
+        </a>
+      </div>
+      <div class="quickclick">
+        <a href=""><img class="smallicon" src="./MSICON/biz.webp" alt="">
+          <p>Shop Business</p>
+        </a>
+      </div>
+      <div class="quickclick">
+        <a href=""><img class="smallicon" src="./MSICON/student.webp" alt="">
+          <p>Shop for students</p>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Normal Promotion -->
+  <section class="midcontainer">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/Surface pro7.webp" alt="">
+              <h6>Surface Pro 7</h6>
+              <p>Don’t miss a merry moment with the help of powerful processors, improved battery life and even more
+                multitasking connections.</p>
+            </a>
+          </div>
+
+          <a href="#">
+            <p>Shop for Surface Pro 7</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/XBOX X.webp" alt="">
+              <h6>Xbox Series</h6>
+              <p>Reach new realms this festive season with next-gen performance in the smallest Xbox yet.</p>
+            </a>
+          </div>
+
+          <a href="#">
+            <p>Shop Xbox Series S</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/MS365.webp" alt="">
+              <h6>Microsoft 365</h6>
+              <p>Unwrap inspiration with best-in-class apps like Word, Excel and PowerPoint.</p>
+            </a>
+          </div>
+
+          <a href="#">
+            <p>Shop for Microsoft 365 Family</p>
+          </a>
+          <a href="#">
+            <p>Shop for Microsoft 365 Personal</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/XBOX GAMES.webp" alt="">
+              <h6>Xbox Game Pass for PC</h6>
+              <p>Unwrap 100+ great games and EA Play. Get your first 3 months for $1. Offer available to new subscribers
+                only.</p>
+            </a>
+
+          </div>
+          <a href="#">
+            <p>Join now</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- XBOX promotion -->
+  <section class="slidecontainer">
+    <div class="xboxpic">
+      <img src="./Pictures/xboxexlg.webp" class="img-fluid xboxslidepicture" alt="">
+    </div>
+
+    <div class="descriptionandbutton xboxdescribe">
+      <div class="surfaceshop">
+        <a href="#">
+          <h3>Elevate their game</h3>
+          <p>Keep your favourite gamer on target with the modernised Xbox Wireless Controller, designed for enhanced
+            comfort.</p>
+        </a>
+
+        <button type="button" class="slideshopbutton">
+          <a href="">
+            <span>Shop Now</span>
+          </a>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  </div>
+  <!-- For business promotion-->
+  <section class="midcontainer">
+    <h4>For business</h4>
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/SURFACE GO BIZ.webp" alt="">
+              <h6>Surface Go 3 for Business</h6>
+              <p>Serve customers better with faster performance and always-connected versatility. Now available with
+                Windows 11.</p>
+            </a>
+          </div>
+
+          <a href="#">
+            <p>Shop now</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/HOLOLENS.webp" alt="">
+              <h6>HoloLens 2</h6>
+              <p>Exclusive to Microsoft Store – 15% off the device designed for precise, efficient, hands-free work</p>
+            </a>
+          </div>
+
+          <a href="#">
+            <p>Shop HoloLens 2 </p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/MS365 BIZ.webp" alt="">
+              <h6>Microsoft 365 for business</h6>
+              <p>Stay a step ahead with poweful apps for productivity, connection and security.</p>
+            </a>
+          </div>
+          <a href="#">
+            <p>Shop now</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <div class="promobox">
+          <div class="promoboxwrap">
+            <a href="#">
+              <img src="./Pictures/TEAMS.webp" alt="">
+              <h6>Get Microsoft Teams for free</h6>
+              <p>Online meetings, chat and up to 10 GB of shared cloud storage – all in one place.</p>
+            </a>
+          </div>
+          <a href="#">
+            <p>Sign up for free</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- social media icon -->
+  <div class="socialmedia">
+    <h6>Follow Microsoft</h6>
+    <ul>
+      <li><a href="#"><img src="./Pictures/facebook.svg" alt=""></a></li>
+      <li><a href="#"><img src="./Pictures/twitter.svg" alt=""></a></li>
+    </ul>
+  </div>
+
+  <footer class="footernav">
+    <div class="footnavbox">
+      <div class="row">
+        <div class="col-xl-2 col-sm-4">
+          <h6>What's New</h6>
+          <ul>
+            <li><a href="#">Surface Pro 8</a></li>
+            <li><a href="#">Surface Laptop Studio</a></li>
+            <li><a href="#">Surface Pro X</a></li>
+            <li><a href="#">Surface Go 3</a></li>
+            <li><a href="#">Surface Laptop 4</a></li>
+            <li><a href="#">Microsoft 365</a></li>
+            <li><a href="#">Windows 11 apps</a></li>
+            <li><a href="#">HoloLens 2</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-sm-4">
+          <h6>Microsoft Store</h6>
+          <ul>
+            <li><a href="#">Account profile</a></li>
+            <li><a href="#">Download Center</a></li>
+            <li><a href="#">Microsoft Store Support</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Order tracking</a></li>
+            <li><a href="#">Microsoft Store Promise</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-sm-4">
+          <h6>Education</h6>
+          <ul>
+            <li><a href="#">Microsoft in education</a></li>
+            <li><a href="#">Office for students</a></li>
+            <li><a href="#">Office 365 for schools</a></li>
+            <li><a href="#">Deals for students & parents</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-sm-4">
+          <h6>Enterprise</h6>
+          <ul>
+            <li><a href="#">Microsoft Azure</a></li>
+            <li><a href="#">Microsoft Industry</a></li>
+            <li><a href="#">Microsoft partner resources</a></li>
+            <li><a href="#">Financial services</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-sm-4">
+          <h6>Developer</h6>
+          <ul>
+            <li><a href="#">Microsoft Visual Studio</a></li>
+            <li><a href="#">Developer Center</a></li>
+            <li><a href="#">Channel 9</a></li>
+            <li><a href="#">Microsoft 365 Dev Center</a></li>
+            <li><a href="#">Microsoft 365 Developer Program</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-2 col-sm-4">
+          <h6>Company</h6>
+          <ul>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Company news</a></li>
+            <li><a href="#">Privacy at Microsoft</a></li>
+            <li><a href="#">Investors</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- bottom website info -->
+      <div class="websiteinfo">
+        <div class="aboutms">
+          <a href="#"><i class="bi bi-globe earthicon" style="font-size: 15px;"></i>English (New Zealand)</a>
+        </div>
+        <div class="aboutms">
+          <div><a href="#">Contact Microsoft</a></div>
+          <div><a href="#">Privacy</a></div>
+          <div><a href="#">Term of use</a></div>
+          <div><a href="#">Trademarks</a></div>
+          <div><a href="#">About our ads</a></div>
+          <div>©Microsoft 2021</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

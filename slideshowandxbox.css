@@ -1,0 +1,105 @@
+/* slideshow */
+.slidecontainer {
+  position: relative;
+  margin-bottom: 5%;
+}
+
+/* the description of the product in the slideshow and its attribute */
+.descriptionandbutton,
+.descriptionandbutton-two {
+  position: absolute;
+  max-width: 40%;
+  top: 30px;
+  padding-left: 5%;
+  z-index: 2;
+}
+.descriptionandbutton-two {
+  top: 30%;
+}
+.surfaceshop a p:nth-child(1) {
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 5px;
+}
+.slideshopbutton {
+  display: inline-block;
+  text-align: center;
+  width: 130px;
+  padding: 5px;
+  background-color: black;
+}
+.slideshopbutton a {
+  color: white;
+}
+.slideshopbutton a span {
+  height: 20px;
+}
+.slideshopbutton a:hover {
+  border-bottom: 2px solid white;
+  margin-right: 10px;
+}
+.slideshopbutton::after {
+  content: ">";
+  color: white;
+}
+
+/* adjust the button position for previous and next slideshow */
+.slidecontainer div .prevslidebutton {
+  justify-content: flex-start;
+
+}
+
+/* 会溢出的部分 */
+.slidecontainer div .nextslidebutton {
+  justify-content: flex-end;
+  /* overflow: hidden; */
+}
+
+.xboxpic {
+  max-width: calc(1600px + 10%);
+}
+
+.xboxdescribe {
+  position: absolute;
+  top: 40%;
+}
+
+@media screen and (max-width: 991px) {
+  .slidecontainer {
+    padding: 0;
+  }
+  .collapsebutton {
+    display: block;
+  }
+
+  .collapsebutton:hover {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .descriptionandbutton,
+  .descriptionandbutton-two {
+    position: static;
+    display: flex;
+    margin: 0;
+    max-width: 100%;
+    height: 320px;
+    padding-left: 0;
+    justify-content: center;
+    background-color: rgb(228, 228, 228);
+  }
+  .surfaceshop {
+    display: flex;
+    flex: 1;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
+  .slidecontainer .slidesbuttononbottom {
+    position: absolute;
+    bottom: 0;
+  }
+}

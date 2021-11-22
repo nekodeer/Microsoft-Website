@@ -1,0 +1,112 @@
+.container-fluid,
+.container-fluid > div {
+  height: 54px;
+}
+.navbar,
+.right-menu,
+.dropdownbuttonright {
+  display: flex;
+  font-size: 14px;
+  justify-content: stretch;
+  align-items: center;
+}
+
+/* overrride the font color of in the navlink */
+.nav-link {
+  padding: 0;
+  color: black !important;
+}
+.navbar-brand {
+  padding-top: 0;
+  align-items: center;
+}
+/* set the ms logo height */
+.navbar-brand img {
+  height: 23px;
+}
+
+.right-menu a {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.right-menu a i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+.dropdownbuttonleft {
+  display: none;
+}
+.dropdownbuttonright {
+  list-style: none;
+}
+
+.navbar-collapse a:hover,
+.dropdownbuttonright a:hover {
+  border-bottom: 2px solid black;
+  color: #262626;
+}
+
+.right-menu:nth-child(5) span:hover,
+.right-menu:nth-child(6) span:hover {
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 1400px) {
+  .right-menu a span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .headcontainer {
+    padding: 0;
+  }
+  .container-fluid,
+  .container-fluid > div {
+    font-size: 20px;
+    padding: 0;
+    height: auto;
+  }
+  /* adjust the logo position */
+  .navbar-brand {
+    order: 2;
+    flex: 1;
+    text-align: center;
+    padding: 0;
+  }
+  .nav-item{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  /* collapose button toggler position to the most left side */
+  .navbar-toggler {
+    order: 0;
+  }
+  .right-menu {
+    margin-right: 10px;
+    order: 3;
+  }
+  .search {
+    order: 1;
+  }
+  /* 这里是折叠内容，顺序放在最后，这样展开时只会撑开导航栏不会影响其他的图标*/
+  .navbar-collapse{
+    order: 4;
+  }
+  .dropdownbuttonright {
+    display: none;
+  }
+  .collapse{
+    background-color: lightgray;
+  }
+  .nav-link{
+    font-size: 16px;
+    margin: 10px 0 10px 10px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .search a {
+    margin: 5px;
+  }
+}
